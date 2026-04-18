@@ -46,10 +46,6 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     localStorage.setItem('accentColor', accentColor)
   }, [accentColor, mounted])
 
-  if (!mounted) {
-    return <>{children}</>
-  }
-
   return (
     <ThemeContext.Provider value={{ theme, setTheme, accentColor, setAccentColor }}>
       {children}
