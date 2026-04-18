@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" className="dark accent-purple" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased bg-background`}>
         <ThemeProvider>
           {children}
